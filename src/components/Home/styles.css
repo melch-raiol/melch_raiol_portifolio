@@ -1,5 +1,61 @@
 .container-home {
-  height: 500px;
+  height: 100%;
   width: 100%;
+
+  display: flex;
+  flex-direction: row;
+
   border: 2px solid red;
+}
+
+.text-home {
+  height: 100%;
+  width: 50%;
+  border: 2px solid gray;
+}
+
+.image-home {
+  height: 100%;
+  width: 50%;
+  border: 2px solid gray;
+}
+
+.img {
+  height: 300px;
+  width: 300px;
+
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.text-test {
+  border-right: 4px solid;
+  width: 14ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(14), blinking 0.5s infinite step-end alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blinking {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 800px) {
+  .container-home {
+    flex-direction: column-reverse;
+  }
+
+  .text-home,
+  .image-home {
+    height: 100%;
+    width: 100%;
+  }
 }

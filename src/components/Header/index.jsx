@@ -45,10 +45,34 @@ function Header() {
 
             <nav className={activedMenu ? "menu-sandwich" : "nav-header"}>
                 <ul className={activedMenu ? "nav-bar menu-nav-bar" : "nav-bar"}>
-                    <li><a href="#section-1">Home</a></li>
-                    <li><a href="#section-2">About</a></li>
-                    <li><a href="#section-3">Projects</a></li>
-                    <li><a href="#section-4">Contacts</a></li>
+                    <li><a
+                        className="a-nav-bar"
+                        href="#section-1"
+                        onClick={() => handleActivedMenu()}
+                    >
+                        Home
+                    </a></li>
+                    <li><a
+                        className="a-nav-bar"
+                        href="#section-2"
+                        onClick={() => handleActivedMenu()}
+                    >
+                        About
+                    </a></li>
+                    <li><a
+                        className="a-nav-bar"
+                        href="#section-3"
+                        onClick={() => handleActivedMenu()}
+                    >
+                        Projects
+                    </a></li>
+                    <li><a
+                        className="a-nav-bar"
+                        href="#section-4"
+                        onClick={() => handleActivedMenu()}
+                    >
+                        Contacts
+                    </a></li>
                 </ul>
             </nav>
         </header>

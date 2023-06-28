@@ -50,6 +50,11 @@
   cursor: pointer;
 }
 
+.a-nav-bar {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .nav-bar li:hover {
   text-decoration: underline;
 }
