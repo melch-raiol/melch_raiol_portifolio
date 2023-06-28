@@ -45,10 +45,10 @@ function Header() {
 
             <nav className={activedMenu ? "menu-sandwich" : "nav-header"}>
                 <ul className={activedMenu ? "nav-bar menu-nav-bar" : "nav-bar"}>
-                    <li><p>Home</p></li>
-                    <li><p>About</p></li>
-                    <li><p>Projects</p></li>
-                    <li><p>Contact</p></li>
+                    <li><a href="#section-1">Home</a></li>
+                    <li><a href="#section-2">About</a></li>
+                    <li><a href="#section-3">Projects</a></li>
+                    <li><a href="#section-4">Contacts</a></li>
                 </ul>
             </nav>
         </header>

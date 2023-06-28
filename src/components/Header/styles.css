@@ -7,19 +7,18 @@
   align-items: center;
   justify-content: space-around;
 
-  top: 0;
-
-  background-color: #58a1d94b;
+  /* background-color: #58a1d94b; */
   color: white;
 }
 
 .logo {
-  width: 40%;
+  width: 10%;
   height: 100%;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid black;
 }
 
 .nav-header {
@@ -145,7 +144,7 @@ label span:nth-child(3) {
     /* border: 1px solid black; */
   }
 
-  .menu-nav-bar li p {
+  .menu-nav-bar li a {
     display: flex;
     justify-content: center;
     align-items: center;
