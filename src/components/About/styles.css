@@ -1,5 +1,21 @@
 .container-about {
   height: 500px;
   width: 100%;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 44%;
+
   border: 2px solid red;
+}
+
+.div-1,
+.div-2,
+.div-3 {
+  border: 1px solid white;
+}
+.div-3 {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }

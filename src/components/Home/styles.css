@@ -1,23 +1,38 @@
 .container-home {
-  height: 100%;
+  height: 80%;
   width: 100%;
 
   display: flex;
   flex-direction: row;
 
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
-.text-home {
+.text-home-container {
   height: 100%;
-  width: 50%;
-  border: 2px solid gray;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* border: 2px solid gray; */
 }
 
-.image-home {
+.image-home-container {
   height: 100%;
-  width: 50%;
-  border: 2px solid gray;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  /* border: 2px solid gray; */
+}
+
+.image-text {
+  /* border: 2px solid gray; */
 }
 
 .img {
@@ -28,12 +43,24 @@
   border-radius: 50%;
 }
 
+.div-i-am {
+  /* border: 2px solid gray; */
+}
+
+.div-text {
+  height: 20%;
+  width: 80%;
+
+  /* border: 2px solid gray; */
+}
+
 .text-test {
+  font-size: 120%;
   border-right: 4px solid;
-  width: 14ch;
+  width: 30ch;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 2s steps(14), blinking 0.5s infinite step-end alternate;
+  animation: typing 4s steps(100), blinking 0.5s infinite step-end alternate;
 }
 
 @keyframes typing {
@@ -50,12 +77,30 @@
 
 @media (max-width: 800px) {
   .container-home {
+    height: 80%;
+  }
+
+  .container-home {
     flex-direction: column-reverse;
   }
 
-  .text-home,
-  .image-home {
+  .div-text {
+    height: 30%;
+    width: 80%;
+  }
+
+  .image-home-container {
     height: 100%;
     width: 100%;
+  }
+
+  .image-text {
+    height: 100%;
+    width: 100%;
+  }
+
+  .img {
+    height: 150px;
+    width: 150px;
   }
 }
